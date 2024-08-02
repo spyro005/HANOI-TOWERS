@@ -28,6 +28,7 @@ int main () {
 
 
         if(out_to_file){
+            cout << "\n\n SOLVER OUTPUT TO OUTPUT.TXT FILE\n\n";
             streambuf* sbf = redirect("output.txt");
 
             run_solver(n_disks, n_pegs, debug, status, draw, draw_value, print_moves);
@@ -37,6 +38,7 @@ int main () {
             return 0;
         }
 
+        cout << "\nSOLVER OUTPUT ON TERMINAL \n";
         run_solver(n_disks, n_pegs, debug, status, draw, draw_value,print_moves);
 
 
