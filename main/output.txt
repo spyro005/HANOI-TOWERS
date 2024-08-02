@@ -1,0 +1,268 @@
+DEBUG SET TO 1
+DRAW SET TO 1
+DRAW MOVES SET TO 1
+STATUS SET TO 1
+DEBUG SET TO 1
+
+ CREATING TOWER GAME OBJECTS: 7 Disks and 7 (number of) pegs  
+
+Created disk named Disk 1 with size 1 on peg 
+Created disk named Disk 2 with size 2 on peg 
+Created disk named Disk 3 with size 3 on peg 
+Created disk named Disk 4 with size 4 on peg 
+Created disk named Disk 5 with size 5 on peg 
+Created disk named Disk 6 with size 6 on peg 
+Created disk named Disk 7 with size 7 on peg 
+ FINISHED GAME OBJECTS CREATION 
+
+ SETTING UP HANOI TOWERS GAME WITH 7 Disks and 7 pegs  
+
+Added peg named 'Peg 1' to game 
+Added peg named 'Peg 2' to game 
+Added peg named 'Peg 3' to game 
+Added peg named 'Peg 4' to game 
+Added peg named 'Peg 5' to game 
+Added peg named 'Peg 6' to game 
+Added peg named 'Peg 7' to game 
+Added disk Disk 1 to game 
+Added disk Disk 2 to game 
+Added disk Disk 3 to game 
+Added disk Disk 4 to game 
+Added disk Disk 5 to game 
+Added disk Disk 6 to game 
+Added disk Disk 7 to game 
+DEBUG SET TO 3 TEMPORARILY
+Added disk named Disk 7 to peg named Peg 1
+Added disk named Disk 6 to peg named Peg 1
+Added disk named Disk 5 to peg named Peg 1
+Added disk named Disk 4 to peg named Peg 1
+Added disk named Disk 3 to peg named Peg 1
+Added disk named Disk 2 to peg named Peg 1
+Added disk named Disk 1 to peg named Peg 1
+RESETTING DEBUG TO 1
+ FINISHED GAME CREATION 
+
+DRAWING INITIAL GAME STATUS
+
+_D1                                                                                                      
+__D2                                                                                                     
+___D3                                                                                                    
+____D4                                                                                                   
+_____D5                                                                                                  
+______D6                                                                                                 
+_______D7                                                                                                
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #1) Move Disk 1 from Peg 1 to Peg 7
+
+                                                                                                         
+__D2                                                                                                     
+___D3                                                                                                    
+____D4                                                                                                   
+_____D5                                                                                                  
+______D6                                                                                                 
+_______D7                                                                                 _D1            
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #2) Move Disk 2 from Peg 1 to Peg 6
+
+                                                                                                         
+                                                                                                         
+___D3                                                                                                    
+____D4                                                                                                   
+_____D5                                                                                                  
+______D6                                                                                                 
+_______D7                                                                  __D2           _D1            
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #3) Move Disk 3 from Peg 1 to Peg 5
+
+                                                                                                         
+                                                                                                         
+                                                                                                         
+____D4                                                                                                   
+_____D5                                                                                                  
+______D6                                                                                                 
+_______D7                                                   ___D3          __D2           _D1            
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #4) Move Disk 4 from Peg 1 to Peg 4
+
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+_____D5                                                                                                  
+______D6                                                                                                 
+_______D7                                    ____D4         ___D3          __D2           _D1            
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #5) Move Disk 5 from Peg 1 to Peg 3
+
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+______D6                                                                                                 
+_______D7                     _____D5        ____D4         ___D3          __D2           _D1            
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #6) Move Disk 6 from Peg 1 to Peg 2
+
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+_______D7      ______D6       _____D5        ____D4         ___D3          __D2           _D1            
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #7) Move Disk 1 from Peg 7 to Peg 6
+
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                           _D1                           
+_______D7      ______D6       _____D5        ____D4         ___D3          __D2                          
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #8) Move Disk 7 from Peg 1 to Peg 7
+
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                           _D1                           
+               ______D6       _____D5        ____D4         ___D3          __D2           _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #9) Move Peg 7 from Peg 2 to Disk 6
+
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                           _D1            ______D6       
+                              _____D5        ____D4         ___D3          __D2           _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #10) Move Peg 7 from Peg 3 to Disk 5
+
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                          _____D5        
+                                                                           _D1            ______D6       
+                                             ____D4         ___D3          __D2           _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #11) Move Peg 7 from Peg 4 to Disk 4
+
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                          ____D4         
+                                                                                          _____D5        
+                                                                           _D1            ______D6       
+                                                            ___D3          __D2           _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #12) Move Peg 7 from Peg 5 to Disk 3
+
+                                                                                                         
+                                                                                                         
+                                                                                          ___D3          
+                                                                                          ____D4         
+                                                                                          _____D5        
+                                                                           _D1            ______D6       
+                                                                           __D2           _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #13) Move Peg 5 from Peg 6 to Disk 1
+
+                                                                                                         
+                                                                                                         
+                                                                                          ___D3          
+                                                                                          ____D4         
+                                                                                          _____D5        
+                                                                                          ______D6       
+                                                            _D1            __D2           _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #14) Move Peg 5 from Peg 6 to Disk 1
+
+                                                                                                         
+                                                                                          __D2           
+                                                                                          ___D3          
+                                                                                          ____D4         
+                                                                                          _____D5        
+                                                                                          ______D6       
+                                                            _D1                           _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+Move #15) Move Peg 5 from Peg 5 to Disk 1
+
+                                                                                          _D1            
+                                                                                          __D2           
+                                                                                          ___D3          
+                                                                                          ____D4         
+                                                                                          _____D5        
+                                                                                          ______D6       
+                                                                                          _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+SOLVED GAME: true
+
+DRAWING FINAL GAME STATUS
+
+                                                                                          _D1            
+                                                                                          __D2           
+                                                                                          ___D3          
+                                                                                          ____D4         
+                                                                                          _____D5        
+                                                                                          ______D6       
+                                                                                          _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ $ PEG 7      $ 
+
+
+ Printing moves 
+
+#1) Move Disk 1 from Peg 1 to Peg 7
+#2) Move Disk 2 from Peg 1 to Peg 6
+#3) Move Disk 3 from Peg 1 to Peg 5
+#4) Move Disk 4 from Peg 1 to Peg 4
+#5) Move Disk 5 from Peg 1 to Peg 3
+#6) Move Disk 6 from Peg 1 to Peg 2
+#7) Move Disk 1 from Peg 7 to Peg 6
+#8) Move Disk 7 from Peg 1 to Peg 7
+#9) Move Peg 7 from Peg 2 to Disk 6
+#10) Move Peg 7 from Peg 3 to Disk 5
+#11) Move Peg 7 from Peg 4 to Disk 4
+#12) Move Peg 7 from Peg 5 to Disk 3
+#13) Move Peg 5 from Peg 6 to Disk 1
+#14) Move Peg 5 from Peg 6 to Disk 1
+#15) Move Peg 5 from Peg 5 to Disk 1
