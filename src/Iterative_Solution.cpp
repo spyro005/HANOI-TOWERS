@@ -11,9 +11,6 @@ bool Iterative_Solution::setup_game(int n_disks, int n_pegs){
     this->tower_game_manager = Tower_Game_Manager(n_disks,n_pegs);
     this->tower_game_manager.Create_Tower_Game_Objects();
     this->tower_game_manager.Default_Setup_Tower_Game();
-    if(stoi(getenv("STATUS")) >= 1){
-        this->tower_game_manager.tower_game.print_status();
-    }
     return true;
 }
 

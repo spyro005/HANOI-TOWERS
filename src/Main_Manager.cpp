@@ -161,6 +161,10 @@ int run_solver(int n_disks,int n_pegs,int debug, int status, int draw, int draw_
         Iterative_Solution is = Iterative_Solution();
         is.setup_game(n_disks,n_pegs);
 
+        if(stoi(getenv("STATUS")) == 1){
+          std::cout << "\n INITIAL GAME STATUS \n";
+          is.tower_game_manager.tower_game.print_status();
+        }
 
         cout << "\nDRAWING INITIAL GAME STATUS\n";
 
@@ -179,8 +183,14 @@ int run_solver(int n_disks,int n_pegs,int debug, int status, int draw, int draw_
 
         //is.print_all_game_moves();
 
+        if(stoi(getenv("STATUS")) == 1){
+          std::cout << "\n FINAL GAME STATUS \n";
+          is.tower_game_manager.tower_game.print_status();
+        }
+
         //if(strcmp(getenv("DRAW"), "2") ==0){
         std::cout << "\nDRAWING FINAL GAME STATUS\n";
+
         if(stoi(getenv("DRAW")) == 2){
           is.tower_game_manager.tower_game.draw_status();
         }
