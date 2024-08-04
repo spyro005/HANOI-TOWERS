@@ -119,13 +119,14 @@ bool Iterative_Solution::check_temp_solution(string peg_name){
 }
 
 bool Iterative_Solution::three_peg_general_iterative_solution(string in_source_peg , string in_aux_peg , string in_dest_peg,int call){
-    int n_disks = this->tower_game_manager.number_of_disks;
+    int n_disks = this->tower_game_manager.get_total_number_of_disks();
     vector<string> peg_names = this->tower_game_manager.tower_game.get_peg_names_in_order();
     //if((peg_names.size() != 3) && (in_source_peg == "") && (in_aux_peg == "") && (in_dest_peg == "")){
     //    cout << " MUST HAVE 3 PEGS. Not " << peg_names.size()  << "\n";
     //    return false;
     //}
     int total_moves = pow(2,n_disks) - 1;
+    //std::uint64_t total_moves_l = pow(2,n_disks) -1; 
     string source_peg = in_source_peg == ""?peg_names[0]:in_source_peg ;
     string aux_peg = in_aux_peg == ""?peg_names[1]:in_aux_peg;
     string dest_peg = in_dest_peg == ""?peg_names[2]:in_dest_peg;
@@ -158,6 +159,10 @@ bool Iterative_Solution::three_peg_general_iterative_solution(string in_source_p
         this->tower_game_manager.tower_game.print_status();
     }
 
+    if(stoi(getenv("DEBUG")) >= 2){
+        cout << "TOTAL NUMBER OF DISKS: " << n_disks << "\n";
+        cout << "TOTAL NUMBER OF MOVES: " << total_moves << "\n";
+    }
     for(int i=1; i <= total_moves;i++){
         moves_so_far++;
         if(stoi(getenv("DEBUG")) >= 2){
@@ -270,10 +275,13 @@ bool Iterative_Solution::general_iterative_solution(){
             aux_peg = peg_names.at(j+1);
             dest_peg = peg_names.at(j+2);
         }catch (const std::out_of_range& e) {
-            std::cerr << "Error: " << e.what() << std::endl;
-            //if(s_peg == "" || aux_peg == "" || dest_peg == ""){
             if(stoi(getenv("DEBUG")) >= 1){
-                std::cerr << "EXITING QUOT LOOP, NOT ALL 3 PEGS ARE VALID NAMES \n";
+                std::cerr << "Error, vector out of range (might be OK to IGNORE in iter. solution): " <<
+                 e.what() << " at for loop index " << j << " . Array size is "<< peg_names.size()<< " ." <<std::endl;
+            }
+            //if(s_peg == "" || aux_peg == "" || dest_peg == ""){
+            if(stoi(getenv("DEBUG")) >= 2){
+                std::cout << "EXITING QUOT LOOP, NOT ALL 3 PEGS ARE VALID NAMES \n";
                 std::cout << "WE CONTINUE WITH THIRD TO LAST PEG AS AUXILARY OR END HERE AT LAST PEG\n";
             }
                 break;

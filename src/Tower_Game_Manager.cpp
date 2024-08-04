@@ -9,11 +9,11 @@ Tower_Game_Manager::Tower_Game_Manager(int n_disks,int n_pegs){
         }
         n_disks = 1;
     }
-    if(n_disks > 999){
+    if(n_disks > 30){
         if(stoi(getenv("DEBUG")) >= 1){
-            cout << "Entered " << to_string(n_disks) << " .Expects at most 999. Making it 999. \n";
+            cout << "Entered " << to_string(n_disks) << " .Expects at most 30. Making it 30. \n";
         }
-        n_disks = 999;
+        n_disks = 30;
     }
     if(n_pegs < 3){
         if(stoi(getenv("DEBUG")) >= 1){
@@ -21,11 +21,11 @@ Tower_Game_Manager::Tower_Game_Manager(int n_disks,int n_pegs){
         }
         n_pegs =3;
     }
-    if(n_pegs > 999){
+    if(n_pegs > 30){
         if(stoi(getenv("DEBUG")) >= 1){
-            cout << "Entered " << to_string(n_pegs) << " .Expects at most 999. Making it 999. \n";
+            cout << "Entered " << to_string(n_pegs) << " .Expects at most 30. Making it 30. \n";
         }
-        n_pegs =999;
+        n_pegs =30;
     }
     this->number_of_disks = n_disks;
     this->number_of_pegs = n_pegs;

@@ -8,18 +8,16 @@ HANOI TOWERS SOLVER WITH ITERATIVE SOLUTION.
 
 ## Description
 
-  
 
-This is a step by step solver of the hanoi towers problems. The user enters the number of disks of pegs (any number between 3 and 999) and the program
-
-prints a detailed move-by-move solution either on the shell/terminal or an output txt file (the output depends on the input parameter in input.txt, the default is the .txt file). Input parameters are placed on the input.txt file and are explained in more detail in later section.
+This is a step by step solver of the hanoi towers problems. The user enters the number of disks of pegs (any number between 3 and 30) and the program prints a detailed move-by-move solution either on the shell/terminal or an output txt file (the output depends on the input parameter in input.txt, the default is the .txt file). Input parameters are placed on the input.txt file and are explained in more detail in later section 'Parameters set' section. 
 
   
-
 The output draws initial and final tower game status and can also print inbetween moves and steps that get you to the solution.
 
 The exact output depends on the input parameters set on the input.txt file and is explained in the 'Parameters' section.
 
+You can enter 3 pegs and 3 disks to see the solution of the classic 3x3 problem, but you can actually use/enter
+any number of pegs and disks between 3 and 30, e.g. 5 disks with 4 pegs, 80 disks with 90 pegs, 22 pegs with 22 disks, 3 disks with 10 pegs, 50 disks with 5 pegs, etc. 
   
 
 ## Getting Started
@@ -107,15 +105,15 @@ Recommended/default values are (for the environment variables after NDISKS, NPEG
 
 In the following template, we have the recommended values for input game parameters.
 
-Set NDISKS ( between 3 and 999 inclusive) to be the number of input disks to get from the first peg to the last following the rules
+Set NDISKS ( between 3 and 30 inclusive) to be the number of input disks to get from the first peg to the last following the rules
 
-Set NPEGS (between 3 and 999 inclusive) to be the number of pegs that the disks have to traverse to get to the last peg following the game rules.
+Set NPEGS (between 3 and 30 inclusive) to be the number of pegs that the disks have to traverse to get to the last peg following the game rules.
 
 
 Values 3,3 for NDISKS, NPEGS respectively solve the classic hanoi tower games puzzle. You can enter any number you like to test.
 
   
-#### Parameter template
+### Parameter template
 
 
 After NDISKS, NPEGS in the following template we have the recommended set of values for all the parameters:
@@ -132,11 +130,11 @@ PRINT_MOVES 1
 
 REDIRECT_OUTPUT 1
 ```
-- NDISKS : the number of disks in the game. Can be any integer greater or equal to 3 and less or equal to 999.
+- NDISKS : the number of disks in the game. Can be any integer greater or equal to 3 and less or equal to 30.
 
 > To view the output for sample run, you can start with 3.
 
-- NPEGS : the number of pegs in the game. Can be any integer greater or equal to 3 and less or equal to 999.
+- NPEGS : the number of pegs in the game. Can be any integer greater or equal to 3 and less or equal to 30.
 
 > To view the output for sample run, you can start with 3.
 
@@ -302,6 +300,159 @@ Printing moves
 > values are 0: to print all output on the terminal
 
 > 1: to redirect all output on the 'output.txt' file
+
+
+## Example custom run with 7 disks and 5 pegs
+
+
+> first 3 moves
+
+```
+INITIAL GAME DRAW AT CALL 1
+
+_D1                                                                        
+__D2                                                                       
+___D3                                                                      
+____D4                                                                     
+_____D5                                                                    
+______D6                                                                   
+_______D7                                                                  
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ 
+
+MOVE #1) Move Disk 1 from Peg 1 to Peg 3
+
+                                                                           
+__D2                                                                       
+___D3                                                                      
+____D4                                                                     
+_____D5                                                                    
+______D6                                                                   
+_______D7                     _D1                                          
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ 
+
+MOVE #2) Move Disk 2 from Peg 1 to Peg 2
+
+                                                                           
+                                                                           
+___D3                                                                      
+____D4                                                                     
+_____D5                                                                    
+______D6                                                                   
+_______D7      __D2           _D1                                          
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ 
+
+MOVE #3) Move Disk 1 from Peg 3 to Peg 2
+
+                                                                           
+                                                                           
+___D3                                                                      
+____D4                                                                     
+_____D5                                                                    
+______D6       _D1                                                         
+_______D7      __D2                                                        
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ 
+
+```
+
+> Move #119 inbetween first and last move
+
+
+```
+MOVE #119) Move Disk 1 from Peg 2 to Peg 1
+
+                                                                           
+                                                                           
+                                                                           
+                                                                           
+_D1                           _____D5                                      
+__D2                          ______D6                                     
+___D3          ____D4         _______D7                                    
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ 
+```
+
+
+> last 4 moves with line graphical print ('DRAW_MOVES' set to 1)
+
+
+```
+MOVE #251) Move Disk 3 from Peg 3 to Peg 5
+
+                                                                           
+                                                                           
+                                                            ___D3          
+                                                            ____D4         
+                                                            _____D5        
+                                             _D1            ______D6       
+                                             __D2           _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ 
+
+MOVE #252) Move Disk 1 from Peg 4 to Peg 3
+
+                                                                           
+                                                                           
+                                                            ___D3          
+                                                            ____D4         
+                                                            _____D5        
+                                                            ______D6       
+                              _D1            __D2           _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ 
+
+MOVE #253) Move Disk 2 from Peg 4 to Peg 5
+
+                                                                           
+                                                            __D2           
+                                                            ___D3          
+                                                            ____D4         
+                                                            _____D5        
+                                                            ______D6       
+                              _D1                           _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ 
+
+MOVE #254) Move Disk 1 from Peg 3 to Peg 5
+
+                                                            _D1            
+                                                            __D2           
+                                                            ___D3          
+                                                            ____D4         
+                                                            _____D5        
+                                                            ______D6       
+                                                            _______D7      
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ 
+
+SOLVED GAME: true
+
+```
+
+> Moves print after final state
+
+```
+Printing moves 
+
+#1) Move Disk 1 from Peg 1 to Peg 3
+#2) Move Disk 2 from Peg 1 to Peg 2
+#3) Move Disk 1 from Peg 3 to Peg 2
+#4) Move Disk 3 from Peg 1 to Peg 3
+#5) Move Disk 1 from Peg 2 to Peg 1
+...
+...
+
+#249) Move Disk 2 from Peg 3 to Peg 4
+#250) Move Disk 1 from Peg 5 to Peg 4
+#251) Move Disk 3 from Peg 3 to Peg 5
+#252) Move Disk 1 from Peg 4 to Peg 3
+#253) Move Disk 2 from Peg 4 to Peg 5
+#254) Move Disk 1 from Peg 3 to Peg 5
+
+```
 
 ## Help
 
