@@ -17,7 +17,7 @@ The output draws initial and final tower game status and can also print inbetwee
 The exact output depends on the input parameters set on the input.txt file and is explained in the 'Parameters' section.
 
 You can enter 3 pegs and 3 disks to see the solution of the classic 3x3 problem, but you can actually use/enter
-any number of pegs and disks between 3 and 30, e.g. 5 disks with 4 pegs, 80 disks with 90 pegs, 22 pegs with 22 disks, 3 disks with 10 pegs, 50 disks with 5 pegs, etc. 
+any number of pegs and disks between 3 and 30, e.g. 5 disks with 4 pegs, 20 disks with 25 pegs, 13 pegs with 13 disks, 3 disks with 10 pegs, 28 disks with 4 pegs, etc. 
   
 
 ## Getting Started
