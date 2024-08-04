@@ -4,6 +4,15 @@
 
 HANOI TOWERS SOLVER WITH ITERATIVE SOLUTION.
 
+> classic 3x3 hanoi towers problem
+
+```
+_D1
+__D2
+___D3
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $
+```
   
 
 ## Description
@@ -18,6 +27,22 @@ The exact output depends on the input parameters set on the input.txt file and i
 
 You can enter 3 pegs and 3 disks to see the solution of the classic 3x3 problem, but you can actually use/enter
 any number of pegs and disks between 3 and 30, e.g. 5 disks with 4 pegs, 20 disks with 25 pegs, 13 pegs with 13 disks, 3 disks with 10 pegs, 28 disks with 4 pegs, etc. 
+
+> Custom 9x6 hanoi towers problem
+
+```
+_D1                                                                                       
+__D2                                                                                      
+___D3                                                                                     
+____D4                                                                                    
+_____D5                                                                                   
+______D6                                                                                  
+_______D7                                                                                 
+________D8                                                                                
+_________D9                                                                               
+~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~ 
+$ PEG 1      $ $ PEG 2      $ $ PEG 3      $ $ PEG 4      $ $ PEG 5      $ $ PEG 6      $ 
+```
   
 
 ## Getting Started
@@ -201,6 +226,7 @@ No other pegs in game
 > 1 : prints 2d graphics line game status where disks are lines with 'DX' format at the end (e.g. D5) to show .> disk size number. Graphical status is printed at start and end of game
 
 > Example line graphical print at start of classic 3x3 hanoi tower problem:
+
 ```
 _D1
 __D2
@@ -213,22 +239,22 @@ $ PEG 1      $ $ PEG 2      $ $ PEG 3      $
 
 > Example box graphical print at end of classic 3x3 hanoi tower problem:
 
+
 ```
-___________
-| DISK 1 |
-^^^^^^^^^^^
-___________
-| DISK 2 |
-^^^^^^^^^^^
-___________
-| DISK 3 |
-^^^^^^^^^^^
-~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~
-$ PEG 1   $ $ PEG 2   $ $ PEG 3   $
-~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~
+                        ___________ 
+                        | DISK 1  | 
+                        ^^^^^^^^^^^ 
+                        ___________ 
+                        | DISK 2  | 
+                        ^^^^^^^^^^^ 
+                        ___________ 
+                        | DISK 3  | 
+                        ^^^^^^^^^^^ 
+~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ 
+$ PEG 1   $ $ PEG 2   $ $ PEG 3   $ 
+~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ 
 ```
 
-  
 
  - DRAW_MOVES (RECOMMENDED 1): controls the simple 2D graphical print of the game status at every move of the game .
 
